@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <!-- Add your CSS styles -->
+    <style>
+        /* Add your CSS styles here */
+        body {
+            background-color: #080710;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.13);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            max-width: 100%;
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ffffff;
+            background-color: rgba(255, 255, 255, 0.07);
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4caf50;
+            color: #ffffff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            margin-top: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form id="signupForm" onsubmit="return validateForm()" action="signup" method="post">
+        <h3>Sign Up</h3>
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Email or Phone" required>
+
+        <label for="password">Password</label>
+        <input type="password"  name="password" placeholder="Password" required>
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password"  name="confirmPassword" placeholder="Confirm Password" required>
+        <div id="error" class="error"></div>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function validateForm() {
+            var password = document.getElementById("password").value;
+            var confirmPassword = document.getElementById("confirmPassword").value;
+            var errorDiv = document.getElementById("error");
+
+            if (password !== confirmPassword) {
+                errorDiv.textContent = "Passwords do not match";
+                return false;
+            } else {
+                errorDiv.textContent = "";
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>

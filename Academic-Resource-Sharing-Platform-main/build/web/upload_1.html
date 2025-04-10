@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Engineering Notes </title>
+    <meta name="description"
+        content="A one stop platform for all your engineering notes and study material. Our well well-organized notes provide you deep understandingo of each domain.Our easily accessible notes are designed to support students, professionals, and enthusiasts alike">
+    <meta name="keywords"
+        content="electrical engineering, mechanical engineering, electronics and communication engineering, computer engineering, computer science, civil engineering,  best notes, all semester, exam notes, complete notes for engineering, engineering notes, hand-written notes, hand-written engineering notes">
+        <link rel="stylesheet" href="upload.css">
+        <link rel="stylesheet" href="style.css">
+   
+ 
+</head>
+
+<body style="background: radial-gradient(#1e879f,#325dc1)">
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="https://www.svvv.edu.in/"><img src="images/logo1.png" alt="SVVV" width="50px" target="_blank" style="border-radius: 100%;"></a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="nav-link" href="./home.html">Home</a></li>
+                        <li><a class="nav-link" href="./projects.html">Projects</a></li>
+                        <li><a class="nav-link" href="./library.html">Library</a></li>
+                        <li><a class="nav-link" href="./upload.html">Upload</a></li>
+                        <li><a class="nav-link" href="https://svvv.edu.in/department/DisplayDeptPage.aspx?page=gaeoo&ItemID=gaeke&nDeptID=ec">Syllabus</a></li>
+                                    
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <style>
+        /* Center the form */
+        .form-container {
+            background-color: #fff;
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+    
+        /* Style the select element */
+        select, input[type="file"], input[type="submit"] ,input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+    
+        /* Style the submit button */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+    
+    <div class="form-container">
+        <h2>Select Branch, Semester, and Upload File</h2>
+    
+        <!-- Form with select, file input, and submit button -->
+        <form action="uploadFile.java" method="post" enctype="multipart/form-data">
+            <select name="branch" id="subject" >
+                <optgroup label="CSE">
+                    <optgroup label="1st Sem">
+                        <option value="data-structures">Data Structures</option>
+                        <option value="programming-fundamentals">Programming Fundamentals</option>
+                        <option value="digital-logic">Digital Logic</option>
+                    </optgroup>
+                    <optgroup label="2nd Sem">
+                        <option value="algorithms">Algorithms</option>
+                        <option value="database-management">Database Management</option>
+                        <option value="computer-networks">Computer Networks</option>
+                    </optgroup>
+                    <optgroup label="3rd Sem">
+                        <option value="data-structures"
+                        >Data Structures</option>
+                        <option value="programming-fundamentals">Programming Fundamentals</option>
+                        <option value="digital-logic">Digital Logic</option>
+                    </optgroup>
+                    <optgroup label="4th Sem">
+                        <option value="algorithms">Algorithms</option>
+                        <option value="database-management">Database Management</option>
+                        <option value="computer-networks">Computer Networks</option>
+                    </optgroup>
+                    <optgroup label="5th Sem">
+                        <option value="data-structures">Data Structures</option>
+                        <option value="programming-fundamentals">Programming Fundamentals</option>
+                        <option value="digital-logic">Digital Logic</option>
+                    </optgroup>
+                    <optgroup label="6th Sem">
+                        <option value="algorithms">Algorithms</option>
+                        <option value="database-management">Database Management</option>
+                        <option value="computer-networks">Computer Networks</option>
+                    </optgroup>
+                    <optgroup label="7th Sem">
+                        <option value="data-structures">Data Structures</option>
+                        <option value="programming-fundamentals">Programming Fundamentals</option>
+                        <option value="digital-logic">Digital Logic</option>
+                    </optgroup>
+                    <optgroup label="8th Sem">
+                        <option value="algorithms">Algorithms</option>
+                        <option value="database-management">Database Management</option>
+                        <option value="computer-networks">Computer Networks</option>
+                    </optgroup>
+                    <!-- Add more semesters and subjects for CSE -->
+                </optgroup>
+                <optgroup label="ME">
+                    <!-- ME semesters and subjects -->
+                </optgroup>
+                <optgroup label="EEE">
+                    <!-- EEE semesters and subjects -->
+                </optgroup>
+                <optgroup label="CE">
+                    <!-- CE semesters and subjects -->
+                </optgroup>
+                <optgroup label="EE">
+                    <!-- EE semesters and subjects -->
+                </optgroup>
+            </select>
+    
+            <input type="file" name="file" id="file" placeholder="Select file from system">
+            <input type="text" name="topic" id="topic" placeholder="Enter topics">
+            <input type="text" name="author" id="author" placeholder="Author">
+    
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    
+</body>
+
+</html>
